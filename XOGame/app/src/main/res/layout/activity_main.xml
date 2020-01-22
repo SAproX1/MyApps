@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bus.sapro.xogame.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/BackgroundTable"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="TableSwitch"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wood3" />
+
+    <ImageView
+        android:id="@+id/coffee1"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="TakeCoffee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cof1" />
+
+    <ImageView
+        android:id="@+id/coffee2"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="6dp"
+        android:onClick="NoTakeCoffee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cof2" />
+
+    <ImageView
+        android:id="@+id/HangingIcon"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="PeopleTalking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/talkingon" />
+
+    <ImageView
+        android:id="@+id/MusicIcon"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:onClick="MusicPlaying"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HangingIcon"
+        app:srcCompat="@drawable/musiciconon" />
+
+    <GridLayout
+        android:id="@+id/Grid"
+        android:layout_width="392dp"
+        android:layout_height="392dp"
+        android:background="@drawable/board"
+        android:clickable="true"
+        android:columnCount="5"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="27dp"
+            android:onClick="PutMagnet"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="27dp"
+            android:onClick="PutMagnet"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="27dp"
+            android:onClick="PutMagnet"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="27dp"
+            android:onClick="PutMagnet"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="26dp"
+            android:onClick="PutMagnet"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="14dp"
+            android:onClick="PutMagnet"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="15dp"
+            android:onClick="PutMagnet"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="15dp"
+            android:onClick="PutMagnet"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:onClick="PutMagnet"
+            android:tag="8" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:onClick="PutMagnet"
+            android:tag="9" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="13dp"
+            android:onClick="PutMagnet"
+            android:tag="10" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:onClick="PutMagnet"
+            android:tag="11" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="13dp"
+            android:onClick="PutMagnet"
+            android:tag="12" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:onClick="PutMagnet"
+            android:tag="13" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            android:onClick="PutMagnet"
+            android:tag="14" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="14dp"
+            android:onClick="PutMagnet"
+            android:tag="15" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:onClick="PutMagnet"
+            android:tag="16" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="14dp"
+            android:onClick="PutMagnet"
+            android:tag="17" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:onClick="PutMagnet"
+            android:tag="18" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:onClick="PutMagnet"
+            android:tag="19" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="13dp"
+            android:onClick="PutMagnet"
+            android:tag="20" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:onClick="PutMagnet"
+            android:tag="21" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:onClick="PutMagnet"
+            android:tag="22" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:onClick="PutMagnet"
+            android:tag="23" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="12dp"
+            android:onClick="PutMagnet"
+            android:tag="24" />
+
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/playAgain"
+        android:layout_width="167dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="playAgain"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/MusicIcon"
+        app:layout_constraintEnd_toEndOf="@+id/Grid"
+        app:layout_constraintStart_toStartOf="@+id/Grid"
+        app:srcCompat="@drawable/playagain" />
+
+    <ImageView
+        android:id="@+id/resetIcon"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:onClick="Reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/reset" />
+
+    <TextView
+        android:id="@+id/scorePlayer2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="29dp"
+        android:alpha="0.3"
+        android:fontFamily="casual"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/coffee2"
+        app:layout_constraintTop_toTopOf="@+id/coffee2" />
+
+    <TextView
+        android:id="@+id/scorePlayer1"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="28dp"
+        android:alpha="0.3"
+        android:fontFamily="casual"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/coffee1"
+        app:layout_constraintEnd_toEndOf="@+id/coffee1" />
+
+    <ImageView
+        android:id="@+id/armP2"
+        android:layout_width="344dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationX="-180dp"
+        android:translationY="-300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/armptwo" />
+
+    <ImageView
+        android:id="@+id/armP1"
+        android:layout_width="344dp"
+        android:layout_height="190dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:translationX="180dp"
+        android:translationY="300dp"
+        app:layout_constraintBottom_toBottomOf="@+id/BackgroundTable"
+        app:layout_constraintEnd_toEndOf="@+id/BackgroundTable"
+        app:srcCompat="@drawable/armpone" />
+
+
+</android.support.constraint.ConstraintLayout>
